@@ -1,0 +1,76 @@
+.contenedor2 {
+    display: flex;
+    justify-content: center;
+}
+
+.tecnologia {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    border: 2px solid rgb(255, 0, 0);
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 3px 5px 15px #e75353a4;
+    transition: all 500ms ease-out;
+}
+
+
+.tecnologia img {
+    width: 300px;
+    height: 300px;
+}
+
+.tecnologia .capa {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: -300px;
+    transition: all 500ms ease-out;
+}
+
+.tecnologia .capa h2{
+    font-family: 'Rubik Glitch', cursive;
+}
+
+.tecnologia .capa button{
+    width: 100px;
+    background-color: white;
+    border-color: black;
+    border-radius: 15px;
+    font-family: 'Rubik Glitch', cursive;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    }
+
+.tecnologia .capa button a{
+    text-decoration: none;
+    color: black;
+}
+
+.tecnologia:hover>.capa {
+    left: 0;
+    background-color: rgba(255, 0, 0, 0.918);
+}
+
+@media screen and (max-width: 730px) {
+
+    .contenedor2 {
+        flex-direction: column;
+        margin-left: 5%;
+    }
+ .tecnologia{
+     height: 340px;
+ }
+
+ .tecnologia img{
+     height: 340px;
+ }
+
+ .tecnologia .capa{
+     height: 340px;
+ }
+}

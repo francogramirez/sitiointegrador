@@ -1,0 +1,14 @@
+<h1 class="holder">Iniciar Sesión</h1>
+<form class="holder" action="/admin/login" method="post">
+  <div class="mb-3">
+    <input type="text" class="form-control" id="inputUser" placeholder="Usuario" name="usuario">
+  </div>
+  <div class="mb-3">
+    <input type="password" class="form-control" id="inputPassword" placeholder="Constraseña" name="password">
+  </div>
+  <button type="submit" class="btn btn-primary">Ingresar</button>
+</form>
+
+{{#if error}}
+<p class="holder" style="color: red;">Usuario o Constraseña incorrectos</p>
+{{/if}}

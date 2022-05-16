@@ -1,0 +1,63 @@
+.personas {
+    overflow: hidden;
+}
+
+.persona {
+    width: 18%;
+    border: 1px solid rgba(255, 0, 0, 0.918);
+    border-radius: 0.25em;
+    float: left;
+    margin-left: 2.25%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.persona img {
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin: 0.8em 0 1em;
+    max-width: 70%;
+}
+
+.persona h5,
+.persona h6 {
+    text-align: center;
+    font-family: 'Didact Gothic', sans-serif;
+    color: black;
+    margin: 0;
+}
+
+.persona h5 {
+    font-size: 0.9em;
+}
+
+.persona h6 {
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.persona p {
+    font-size: 0.7em;
+    color: #444;
+    margin: 0 1em 1em;
+}
+
+.persona:first-child {
+    margin-left: 0;
+}
+
+@media screen and (max-width: 960px){
+.personas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.persona{
+    width: 90%;
+    margin-bottom: 5%;
+    margin-left: 0px;
+}
+
+}

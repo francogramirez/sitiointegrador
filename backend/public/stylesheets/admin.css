@@ -1,0 +1,53 @@
+form{
+    padding: 4em;
+}
+
+h1.holder {
+    padding-top: 1em;
+    font-size: 3em;
+}
+
+header h1 {
+    color: black;
+    font-size: 3.5em;
+    font-family: 'Chakra Petch', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    display: inline-block;
+    position: relative;
+    bottom: 30px;
+    left: 30px;
+}
+
+body{
+    height: 100%;
+}
+/* Agregar.hbs */
+
+textarea{
+    resize: none;
+}
+
+textarea.form-control {
+    min-height: calc(10.5em + 0.75rem + 2px);
+}
+
+#formAgregarNovedades{
+    margin-top: 50px;
+}
+/* FinAgregar.hbs */
+
+/* Novedades */
+.holder.row{
+    width: 100%;
+    
+}
+
+@media screen and (max-width: 980px){
+    .btn.btn-secondary{
+        margin-top: 2px;
+        width: 100%;
+    }
+}   
+
+/* fin novedades */ 
